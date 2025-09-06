@@ -9,6 +9,7 @@ export function Sidebar() {
     { name: "Reports", href: "/reports", icon: "fas fa-file-alt", current: location === "/reports" },
     { name: "Integrations", href: "/integrations", icon: "fas fa-plug", current: location === "/integrations" },
     { name: "Automation", href: "/automation", icon: "fas fa-robot", current: location === "/automation" },
+    { name: "Resilient System", href: "/resilient", icon: "fas fa-shield-alt", current: location === "/resilient" },
   ];
 
   return (

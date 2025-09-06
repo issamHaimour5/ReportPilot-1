@@ -8,6 +8,7 @@ import Dashboard from "@/pages/Dashboard";
 import Reports from "@/pages/Reports";
 import Integrations from "@/pages/Integrations";
 import Automation from "@/pages/Automation";
+import ResilientSystem from "@/pages/ResilientSystem";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -18,6 +19,7 @@ function Router() {
         <Route path="/reports" component={Reports} />
         <Route path="/integrations" component={Integrations} />
         <Route path="/automation" component={Automation} />
+        <Route path="/resilient" component={ResilientSystem} />
         <Route component={NotFound} />
       </Switch>
     </Layout>

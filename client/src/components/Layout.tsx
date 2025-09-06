@@ -16,6 +16,8 @@ export function Layout({ children }: LayoutProps) {
         return "Integrations";
       case "/automation":
         return "Automation";
+      case "/resilient":
+        return "Resilient System";
       default:
         return "Dashboard";
     }
@@ -29,6 +31,8 @@ export function Layout({ children }: LayoutProps) {
         return "Connect and manage your project management tools";
       case "/automation":
         return "Configure smart automation rules and behavior learning";
+      case "/resilient":
+        return "Interactive demo of system resilience concepts and error recovery";
       default:
         return "Monitor your team's progress and automation insights";
     }
