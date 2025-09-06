@@ -23,9 +23,9 @@ export function Sidebar() {
       <nav className="flex-1 p-4 space-y-2">
         {navigation.map((item) => (
           <Link key={item.name} href={item.href}>
-            <a
+            <div
               className={cn(
-                "flex items-center gap-3 px-3 py-2 rounded-md transition-colors",
+                "flex items-center gap-3 px-3 py-2 rounded-md transition-colors cursor-pointer",
                 item.current
                   ? "bg-primary text-primary-foreground"
                   : "text-muted-foreground hover:bg-accent hover:text-accent-foreground"
@@ -34,7 +34,7 @@ export function Sidebar() {
             >
               <i className={`${item.icon} w-4`}></i>
               <span>{item.name}</span>
-            </a>
+            </div>
           </Link>
         ))}
       </nav>
